@@ -27,10 +27,7 @@
               "src/assets"
             ],
             "styles": [
-              "/Users/charlesjussan//Documents/Angular/ProjetFirebase/node_modules/bootstrap/dist/css/bootstrap.css",
               "src/styles.scss"
-
-              
             ],
             "scripts": []
           },

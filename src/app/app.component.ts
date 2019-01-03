@@ -15,7 +15,7 @@ export class AppComponent {
       }, 1000
     );
   });
-
+ // "/Users/charlesjussan//Documents/Angular/ProjetFirebase/node_modules/bootstrap/dist/css/bootstrap.css",
   appareils = [
     {
       name: 'Machine à laver',
