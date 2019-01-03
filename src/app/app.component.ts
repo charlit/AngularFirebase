@@ -12,7 +12,10 @@ export class AppComponent {
     setTimeout(
       () => {
         this.isAuth = true;
-      }, 4000
+      }, 2000
     );
   }
+  onAllumer() {
+    console.log('On allume tout !');
+}
 }
