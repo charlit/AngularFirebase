@@ -9,8 +9,6 @@ import { AppareilService } from './services/appareil.service';
 export class AppComponent  {
   isAuth = false;
 
- 
- // "/Users/charlesjussan//Documents/Angular/ProjetFirebase/node_modules/bootstrap/dist/css/bootstrap.css",
 
   constructor(private appareilService: AppareilService) {
     setTimeout(
