@@ -6,10 +6,10 @@ import { AppareilService } from '../services/appareil.service';
   templateUrl: './appareil-view.component.html',
   styleUrls: ['./appareil-view.component.scss']
 })
-export class AppareilViewComponent implements OnInit {
-
-  appareils: any[];
+export class AppareilViewComponent implements OnInit  {
   isAuth = false;
+  appareils: any[];
+
   lastUpdate = new Promise((resolve, reject) => {
     const date = new Date();
     setTimeout(
@@ -19,7 +19,13 @@ export class AppareilViewComponent implements OnInit {
     );
   });
 
-  constructor(private appareilService: AppareilService) { }
+  constructor(private appareilService: AppareilService) {
+    setTimeout(
+      () => {
+        this.isAuth = true;
+      }, 2000
+    );
+  }
 
   ngOnInit() {
     this.appareils = this.appareilService.appareils;
@@ -36,5 +42,9 @@ export class AppareilViewComponent implements OnInit {
       return null;
     }
   }
+
+
+
+
 
 }

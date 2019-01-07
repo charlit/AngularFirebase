@@ -34,5 +34,4 @@ export class AppareilService {
         this.appareils[i].status = 'éteint';
     }
 
-    
 }
