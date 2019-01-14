@@ -25,6 +25,7 @@ const appRoutes: Routes = [
   { path: '', component: AppareilViewComponent },
   { path: 'not-found', component: FourOhFourComponent },
   { path: '**', redirectTo: 'not-found' }
+  
 ];
 
 
