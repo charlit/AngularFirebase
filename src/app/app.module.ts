@@ -25,7 +25,6 @@ const appRoutes: Routes = [
   { path: '', canActivate: [AuthGuard], component: AppareilViewComponent },
   { path: 'not-found', component: FourOhFourComponent },
   { path: '**', redirectTo: 'not-found' }
-  
 ];
 
 
@@ -38,7 +37,6 @@ const appRoutes: Routes = [
     AppareilViewComponent,
     SingleAppareilComponent,
     FourOhFourComponent
-  
   ],
   imports: [
     BrowserModule,
